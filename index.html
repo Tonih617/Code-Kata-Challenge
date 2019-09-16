@@ -3,44 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>String Checker</title>
+  <title>Credit Card Validator</title>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 </head>
+<style>
+    .error{
+      color: red;
+    }
+    </style>
 <body>
   <div class="container">
-    <form action="index.html" method="post">
+    <form id="my-form" action="index.html" method="post">
 
       <fieldset>
-        <legend>Do these these phrases match?</legend>
+        <legend>Card Validator</legend>
 
-        <label for="phrase-one">Phrase 1:</label>
-        <input type="text" id="phrase-one" name="phrase-one">
-
-        <label for="phrase-two">Phrase 2:</label>
-        <input type="text" id="phrase-two" name="phrase-two">
-      </fieldset>
-     <button type="submit">Check!</button>
-    </form>
-    <!-- <button id="clear-button"> Clear </button> -->
-    <div id="Sunny-Photo"></div>
-    <div id="Scratching-head-emoji"></div>
-    <div class="tenor-gif-embed"></div>
-    <h1 class="answer"> </h1>
-  </div>
+        <div id="credit-card" class="credit-card">
   
-  <!-- /div> data-postid="12301149" data-share-method="host" data-width="100%" data-aspect-ratio="1.761904761904762">
-    <a href="https://tenor.com/view/shannon-sharpe-shake-head-gif-12301149">Shannon Sharpe GIF</a> from <a href="https://tenor.com/search/shannon-gifs">Shannon GIFs</a>
-  </div>
-  <script type="text/javascript" async src="https://tenor.com/embed.js">
-  </script>
-  <img src="tenor-gif-embed" style="display: none;" /> -->
+            <div class="col-6 col">
+              <label for="cc-num">Card Number:
+              </label>
+              <input id="cc-num" name="cc-num" type="text">
+              <div id="fireworks_photo.png"></div>
+            </div>
+  
+            
+      <button type="submit">1-2-3-Validate!</button>
+    </form>
+            
+            <h1 id="error" class="error"> </h1>
   <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous">
   </script>
-  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

@@ -4,9 +4,12 @@
  */
 
 body {
-  background-color: rgb(219, 157, 235);
-  color: black;
-  font-family: 'Playfair Display', serif;
+  /* background-color: rgb(235, 92, 114); */
+  background:
+       linear-gradient(to right, teal, rgb(97, 233, 219), #84ceeb, rgb(4, 219, 4), #e49eff, turquoise, transparent),
+       linear-gradient(to top left, yellow, #00feff, #8860D0, #Fa5ea7, transparent);
+  color: rgb(210, 15, 132);
+  font-family:'Lobster', cursive;
   padding: 20px;
 }
 
@@ -39,9 +42,9 @@ button {
 }
 
 legend {
-	font-weight: bold;
+	font-weight:bold;
 	padding-top: .5em;
-	border-top: 2px solid rgba(8, 63, 87, 0.6);
+	border-top: 2px solid  rgb(210, 15, 132);
 	margin-bottom: 1.125em;
 }
 
@@ -86,7 +89,7 @@ input[type="radio"] {
 button {
 	color: #fff;
 	padding: .55em 1.25em;
-	background: #083f57;
+	background:  rgb(210, 15, 132);
 	margin: 1.25em 0 .5em;
 	cursor: pointer;
 	border: 2px solid black;
@@ -101,5 +104,5 @@ button:hover {
 input,
 select,
 option {
-	font-family: 'roboto', sans-serif;
+	font-family:'Lobster', cursive;
 }
